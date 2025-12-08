@@ -7,14 +7,9 @@
   "theme_color": "#2563EB",
   "icons": [
     {
-      "src": "finder.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "finder.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "question_mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
     }
   ]
 }

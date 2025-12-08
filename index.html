@@ -121,7 +121,7 @@
     <!-- PWA Configuration -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#2563EB">
-    <link rel="apple-touch-icon" href="finder.png">
+    <link rel="apple-touch-icon" href="question_mark.svg">
 </head>
 
 <body class="overflow-x-hidden">
@@ -236,13 +236,102 @@
         </div>
     </section>
 
+    <!-- Section 3: Deep Dive into Finder -->
+    <section class="container mx-auto px-6 mb-16 max-w-6xl">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="bg-gray-50 p-6 border-b border-gray-200">
+                <h3 class="text-2xl font-bold text-gray-800">3. המדריך המלא ל-Finder</h3>
+                <p class="text-gray-600 mt-2">
+                    ה-Finder הוא הבית של הקבצים שלכם. בואו נבין מה אנחנו רואים כשאנחנו פותחים תיקייה.
+                </p>
+            </div>
+
+            <div class="p-6 md:p-10 flex flex-col lg:flex-row gap-10 items-start">
+                <!-- Image Area -->
+                <div class="lg:w-1/2 w-full">
+                    <div class="relative rounded-xl overflow-hidden shadow-2xl border border-gray-200 group">
+                        <img src="folder.png" alt="Finder Window Explanation"
+                            class="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-105">
+
+                        <!-- Optional: Overlay hints if we wanted to get fancy, but simple image is best for now -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none">
+                        </div>
+                    </div>
+                    <p class="text-sm text-center text-gray-500 mt-4 italic">חלון ה-Finder הטיפוסי</p>
+                </div>
+
+                <!-- Explanations Area -->
+                <div class="lg:w-1/2 w-full space-y-6">
+
+                    <!-- Feature 1: The Sidebar -->
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg text-primary text-xl">📂</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">סרגל הצד (Sidebar)</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                בצד ימין (או שמאל במק בעברית) נמצאים הקיצורים החשובים.
+                                <br>
+                                <span class="text-blue-600 font-medium">• Airdrop:</span> לשליחת קבצים לאייפון.
+                                <br>
+                                <span class="text-blue-600 font-medium">• Applications:</span> כל התוכנות המותקנות.
+                                <br>
+                                <span class="text-blue-600 font-medium">• Downloads:</span> כל מה שהורדתם מהאינטרנט.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2: View Options -->
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-green-100 p-3 rounded-lg text-green-600 text-xl">👀</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">אפשרויות תצוגה</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                למעלה בסרגל הכלים, יש כפתור שמשנה איך הקבצים נראים:
+                                <br>
+                                <strong>Icons:</strong> אייקונים גדולים (טוב לתמונות).
+                                <br>
+                                <strong>List:</strong> רשימה מפורטת עם תאריכים וגדלים.
+                                <br>
+                                <strong>Columns:</strong> עמודות שנפתחות אחת אחרי השנייה (מעולה לניווט עמוק).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3: The Path Bar -->
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-yellow-100 p-3 rounded-lg text-yellow-600 text-xl">📍</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">איפה אני? (Path Bar)</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                בתחתית החלון (אם מופעל) רואים את הנתיב המלא לתיקייה.
+                                <br>
+                                <em>טיפ:</em> לחצו על שם התיקייה בכותרת החלון כדי לראות בדיוק איפה היא שמורה.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4: Search -->
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-purple-100 p-3 rounded-lg text-purple-600 text-xl">🔍</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800">חיפוש חכם</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                הזכוכית מגדלת למעלה מחפשת נהדר. אפשר להגדיר לה לחפש "בכל המק" או רק בתיקייה הנוכחית שאתם
+                                נמצאים בה.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Section 3: iCloud Synchronization (Text Only) -->
     <section class="bg-gray-100 py-16 px-6">
         <div class="container mx-auto max-w-4xl">
-            <!-- Text Content Centered -->
             <div class="text-center">
-                <h3 class="text-3xl font-bold text-gray-800 mb-4">3. סנכרון עם האייפון (iCloud)</h3>
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">4. סנכרון עם האייפון (iCloud)</h3>
                 <p class="text-gray-600 mb-8 text-lg max-w-2xl mx-auto">
                     ה-MacBook והאייפון שלכם הם החברים הכי טובים. ברגע שאתם מחוברים לאותו חשבון (Apple ID) בשני המכשירים,
                     המידע זורם ביניהם אוטומטית ללא כבלים.
@@ -307,7 +396,7 @@
     <!-- Section 4: Trackpad Gestures -->
     <section class="container mx-auto px-6 py-16 max-w-6xl">
         <div class="text-center mb-10">
-            <h3 class="text-3xl font-bold text-gray-800 mb-3">4. מחוות משטח המגע (Trackpad)</h3>
+            <h3 class="text-3xl font-bold text-gray-800 mb-3">5. מחוות משטח המגע (Trackpad)</h3>
             <p class="text-gray-600">העכבר במקבוק חכם מאוד. אין צורך בלחצנים פיזיים, הכל עובד עם האצבעות.</p>
         </div>
 
@@ -387,7 +476,7 @@
     <!-- Section 5: Shortcuts (Table Only) -->
     <section class="bg-white py-16 px-6 shadow-inner">
         <div class="container mx-auto max-w-4xl">
-            <h3 class="text-3xl font-bold text-gray-800 mb-4 text-center">5. קיצורי מקלדת שחובה לדעת</h3>
+            <h3 class="text-3xl font-bold text-gray-800 mb-4 text-center">6. קיצורי מקלדת שחובה לדעת</h3>
             <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
                 שימוש בקיצורי מקלדת הוא הדרך המהירה ביותר לעבוד במק. הנה רשימה של הקיצורים הבסיסיים והחשובים ביותר שכדאי
                 להתחיל איתם.
